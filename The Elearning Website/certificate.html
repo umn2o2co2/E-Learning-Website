@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Certificate Of Completion</title>
+</head>
+<body>
+    <div id="certificate">
+        <div style="height:550px; width: 800px; padding:20px; text-align:center; border: 5px inset #1C6EA4;background-color: #FFFBED">
+            <div style="height:500px; padding:20px; text-align:center;border: 5px double rgba(3,100,164,0.67); font-family: Georgia, serif; display: flex; align-items: center; justify-content: center">
+                <div>
+                    <img src="img/seal.svg" style="height: 80px; width: 80px; background: transparent; border: transparent"><br>
+                    <span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
+                    <br><br>
+                    <span style="font-size:25px"><i>This is to certify that</i></span>
+                    <br><br>
+                    <span style="font-size:30px"><b>Fname Lname</b></span><br/><br/>
+                    <span style="font-size:25px"><i>has completed the course</i></span> <br/><br/>
+                    <span style="font-size:30px">CourseName</span> <br/><br/>
+                    <span style="font-size:25px"><i>on</i></span><br>
+                    <span id="date" style="font-size:30px">dd/mm/yy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const today = new Date();
+    const date = document.getElementById('date');
+    date.innerHTML = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+</script>
+</html>
